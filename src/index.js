@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link} from 'react-router-dom';
 import './index.css';
 import App from './App';
+import Navbar from './components/Navbar';
 import * as serviceWorker from './serviceWorker';
 
 const Home = () => {
@@ -17,17 +18,7 @@ const About = () => {
 ReactDOM.render(
 <BrowserRouter>
     <div>
-        <ul>
-            <li>
-                <Link to="/">Root page</Link>
-            </li>
-            <li>
-                <Link to="/about">About page</Link>
-            </li>
-            <li>
-                <Link to="/home">Home page</Link>
-            </li>
-        </ul>
+        <Navbar/>
 
         <Route exact path="/" component={App}/>
         <Route path="/about" component={About}/>

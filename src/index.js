@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route, Link} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -17,6 +17,18 @@ const About = () => {
 ReactDOM.render(
 <BrowserRouter>
     <div>
+        <ul>
+            <li>
+                <Link to="/">Root page</Link>
+            </li>
+            <li>
+                <Link to="/about">About page</Link>
+            </li>
+            <li>
+                <Link to="/home">Home page</Link>
+            </li>
+        </ul>
+
         <Route exact path="/" component={App}/>
         <Route path="/about" component={About}/>
         <Route path="/home" component={Home}/>

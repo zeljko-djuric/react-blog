@@ -5,9 +5,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const Home = () => {
+    return <h1> THIS IS HOME PAGE</h1>
+}
+
+const About = () => {
+    return <h1> THIS IS ABOUT PAGE</h1>
+}
+
+
 ReactDOM.render(
 <BrowserRouter>
-    <Route path="/" component={App}/>
+    <div>
+        <Route exact path="/" component={App}/>
+        <Route path="/about" component={About}/>
+        <Route path="/home" component={Home}/>
+    </div>
 </BrowserRouter>
 , document.getElementById('root'));
 

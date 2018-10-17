@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link} from 'react-router-dom';
-import './index.css';
 import Welcome from './components/Welcome';
 import Navbar from './components/Navbar';
 import * as serviceWorker from './serviceWorker';

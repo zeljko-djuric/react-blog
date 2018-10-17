@@ -11,7 +11,7 @@ const Welcome = () => {
       </div>
     </div>
   </div>
-</header>
+</header>   
     );
 }
 

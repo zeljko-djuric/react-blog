@@ -1,9 +1,11 @@
 import React from 'react';
+import Article from './../Article'
 
 const Welcome = () => {
     return (
-        <header className="header header-inverse" style={{backgroundImage: 'url(assets/img/bg-gift.jpg)'}} data-overlay={8}>
-  <div className="container text-center">
+        <div>
+          <header className="header header-inverse" style={{backgroundImage: 'url(assets/img/bg-gift.jpg)'}} data-overlay={8}>
+    <div className="container text-center">
     <div className="row">
       <div className="col-12 col-lg-8 offset-lg-2">
         <h1>Latest Blog Posts</h1>
@@ -11,7 +13,20 @@ const Welcome = () => {
       </div>
     </div>
   </div>
-</header>   
+</header>  
+<main className="main-content bg-gray">
+  <div className="row">
+      <div class="col-12 col-lg-6 offset-lg-3">
+        <Article/>
+        <hr/>
+        <Article/>
+        <hr/>
+        <Article/>
+      </div>
+  </div>
+
+</main>  
+        </div>
     );
 }
 

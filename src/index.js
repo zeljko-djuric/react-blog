@@ -5,6 +5,8 @@ import Welcome from './components/Welcome';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import * as serviceWorker from './serviceWorker';
+import CreateArticle from './components/CreateArticle'
+
 
 const Home = () => {
     return <h1> THIS IS HOME PAGE</h1>
@@ -23,6 +25,7 @@ ReactDOM.render(
         <Route exact path="/" component={Welcome}/>
         <Route path="/about" component={About}/>
         <Route path="/home" component={Home}/>
+        <Route path="/articles/create" component={CreateArticle}/>
         <Footer/>
     </div>
 </BrowserRouter>

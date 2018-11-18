@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Link} from 'react-router-dom';
 import Welcome from './components/Welcome';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Login from './components/Login';
 import * as serviceWorker from './serviceWorker';
 import CreateArticle from './components/CreateArticle'
 
@@ -25,6 +26,7 @@ ReactDOM.render(
         <Route exact path="/" component={Welcome}/>
         <Route path="/about" component={About}/>
         <Route path="/home" component={Home}/>
+        <Route path="/login" component={Login}/>
         <Route path="/articles/create" component={CreateArticle}/>
         <Footer/>
     </div>

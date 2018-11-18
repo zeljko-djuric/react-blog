@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
  const Article = () => {
     return (
@@ -13,9 +14,9 @@ import React from 'react'
               <time>May 13, 2017</time>
             </div>
           </header>
-          <a href="blog-single.html">
+          <Link className="blog-single.html" to="/article/some-title-slug">
             <img className="rounded" src="assets/img/blog-4.jpg" alt="..." />
-          </a>
+          </Link>
           <div className="card-block">
             <p className="text-justify">Together. Great. So good was saying, that can't first let called air divide stars male isn't i. Herb third let
               may fourth divide. Greater gathering land you'll i their beast have. She'd form sea it wherein fowl, spirit

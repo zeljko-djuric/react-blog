@@ -8,10 +8,10 @@ const Navbar = () =>{
   <div className="container">
     <div className="topbar-left">
       <button className="topbar-toggler">☰</button>
-      <a className="topbar-brand" href="index.html">
+      <Link className="topbar-brand" to="/">
         <img className="logo-default" src={`${process.env.PUBLIC_URL}/assets/img/logo.png`} alt="logo" />
         <img className="logo-inverse" src={`${process.env.PUBLIC_URL}/assets/img/logo-light.png`} alt="logo" />
-      </a>
+      </Link>
     </div>
     <div className="topbar-right">
       <ul className="topbar-nav nav">

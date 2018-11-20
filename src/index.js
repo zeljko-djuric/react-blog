@@ -10,14 +10,6 @@ import * as serviceWorker from './serviceWorker';
 import CreateArticle from './components/CreateArticle'
 
 
-const Home = () => {
-    return <h1> THIS IS HOME PAGE</h1>
-}
-
-const About = () => {
-    return <h1> THIS IS ABOUT PAGE</h1>
-}
-
 
 ReactDOM.render(
 <BrowserRouter>
@@ -25,8 +17,6 @@ ReactDOM.render(
         <Navbar/>
 
         <Route exact path="/" component={Welcome}/>
-        <Route path="/about" component={About}/>
-        <Route path="/home" component={Home}/>
         <Route path="/login" component={Login}/>
         <Route path="/article/:slug" component={SingleArticle}/>
 
